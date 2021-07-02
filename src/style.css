@@ -173,7 +173,8 @@ p {
   section {
     flex-direction: column;
   }
-  container {
+  container, container-fluid {
+    justify-content: center;
     text-align: center;
   }
 

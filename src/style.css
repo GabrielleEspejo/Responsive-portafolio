@@ -108,6 +108,10 @@ h5 {
   word-spacing: 8px;
 }
 
+h5{
+  font-size: 30px;
+}
+
 p {
   color: var(--primary-color);
   font-size: 18px;
@@ -185,7 +189,7 @@ p {
   h1 {
     font-size: 40px !important;
   }
-  h2 {
+  h2, h5 {
     font-size: 20px;
   }
   p,

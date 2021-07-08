@@ -173,6 +173,11 @@ p {
   text-decoration: underline;
 }
 
+.info{
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
 /* Buttons and links end*/
 
 footer{

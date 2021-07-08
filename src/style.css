@@ -174,7 +174,7 @@ p {
 }
 
 .info{
-  color: var(--secondary-color);
+  color: var(--primary-color);
   text-decoration: none;
 }
 

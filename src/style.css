@@ -175,6 +175,13 @@ p {
 
 /* Buttons and links end*/
 
+footer{
+  margin: 60px 0;
+}
+ footer .footer-email{
+   margin: 20px 0;
+ }
+
 footer .social-links a {
   background-color: var(--variant-color2);
   border-radius: 50%;

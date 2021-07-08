@@ -129,7 +129,9 @@ p {
 .contact {
   color: var(--secondary-color)
 }
-
+footer h2 {
+  color: var(--secondary-color);
+}
 /*--------Titles, p END----------*/
 
 /* Buttons ans links start*/

@@ -231,6 +231,6 @@ color: var(--variant-color2);
     font-size: 13px !important;
   }
   .hola{
-    font-size: 80px;
+    font-size: 80px !important;
   }
 }

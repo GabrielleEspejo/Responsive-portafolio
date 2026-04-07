@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gaby Portfolio</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Gaby</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      ☰
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <div class="col-lg-6">
+        <h1>Curious about<br>how things break</h1>
+        <p>
+          Learning by building, testing, and fixing things along the way.
+        </p>
+        <a href="projects.html" class="btn-main">Explore my work</a>
+      </div>
+
+      <div class="col-lg-6 text-center">
+        <img src="images/cube.png" alt="cube" class="hero-img">
+        <p class="click-text">Click me 👀</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHAT I'M EXPLORING -->
+<section class="exploring">
+  <div class="container">
+    <h2>What I’m exploring</h2>
+
+    <div class="row g-4 mt-3">
+
+      <div class="col-md-6">
+        <div class="card-light">
+          <h5>🐞 Testing mindset</h5>
+          <p>Understanding how to approach problems and think about bugs.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card-dark">
+          <h5>Debugging</h5>
+          <p>Digging into code to uncover and fix issues.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card-light">
+          <h5>Front-end basics</h5>
+          <p>Building simple interactive user interfaces.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card-dark">
+          <h5>API interaction</h5>
+          <p>Connecting and testing data from different services.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects">
+  <div class="container">
+    <h2>Projects</h2>
+
+    <div class="row g-4 mt-3">
+
+      <div class="col-md-6">
+        <div class="project-card">
+          <img src="images/weather-app.png" alt="">
+          <div class="project-info">
+            <h5>Weather App</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="project-card dark">
+          <img src="images/trivia-page.png" alt="">
+          <div class="project-info">
+            <h5>Trivia App</h5>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="container text-center">
+    <h2>I like breaking things...</h2>
+    <p>so I can understand how they work</p>
+    <a href="contact.html" class="btn-main">Get in touch</a>
+  </div>
+</section>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

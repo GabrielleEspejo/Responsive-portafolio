@@ -1,3 +1,75 @@
+/* ✨ UPGRADE VISUAL */
+
+/* HERO más interesante */
+.sec1 {
+  background: linear-gradient(120deg, #0f172a, #1e293b);
+  color: white;
+}
+
+.sec1 h1 {
+  font-size: 60px;
+}
+
+.sec1 p {
+  color: #cbd5f5;
+}
+
+/* CARDS PROYECTOS */
+.project-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+/* TEXTO SOBRE IMAGEN */
+.project-card {
+  position: relative;
+}
+
+.project-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(transparent, rgba(0,0,0,0.7));
+  color: white;
+}
+
+/* BOTONES más modernos */
+.celeb {
+  background: #ef4444;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 600;
+}
+
+.celeb:hover {
+  background: #dc2626;
+}
+
+/* SEPARACIÓN MÁS BONITA */
+section {
+  padding: 140px 20px;
+}
+
+/* TIPOGRAFÍA MÁS LIMPIA */
+h1 {
+  letter-spacing: -1px;
+}
+
+p {
+  max-width: 600px;
+  margin: auto;
+}
+
+
 /* RESET */
 * {
   box-sizing: border-box;

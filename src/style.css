@@ -2,6 +2,7 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
 body {
@@ -9,6 +10,7 @@ body {
   font-family: "Inter", "Quicksand", sans-serif;
   background: #f8fafc;
   color: #1e293b;
+  overflow-y: scroll;
 }
 
 /* IMAGES */
@@ -20,9 +22,9 @@ img {
 
 /* COLORS */
 :root {
-  --primary: #0f172a;     /* dark navy */
-  --accent: #ef4444;      /* modern red/coral */
-  --soft: #f1f5f9;        /* light background */
+  --primary: #0f172a;
+  --accent: #ef4444;
+  --soft: #f1f5f9;
   --muted: #64748b;
 }
 
@@ -41,9 +43,15 @@ img {
   color: var(--accent) !important;
 }
 
-/* SECTIONS */
+/* SECTIONS (FULL SCREEN SCROLL) */
 section {
-  padding: 100px 20px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+  padding: 80px 20px;
+  transition: all 0.6s ease;
 }
 
 /* HERO */
@@ -51,12 +59,12 @@ section {
   background: linear-gradient(120deg, #f8fafc, #e2e8f0);
 }
 
-/* SECOND */
+/* SECTION 2 */
 .sec2 {
   background: white;
 }
 
-/* THIRD */
+/* SECTION 3 */
 .sec3 {
   background: #f1f5f9;
 }
@@ -64,6 +72,11 @@ section {
 /* ABOUT */
 .sec4 {
   background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+}
+
+.sec4 h1,
+.sec4 p {
   color: white;
 }
 
@@ -105,6 +118,13 @@ p {
 }
 
 /* BUTTONS */
+.navigation-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
 .celeb {
   background: var(--primary);
   color: white;
@@ -117,7 +137,6 @@ p {
 
 .celeb:hover {
   background: var(--accent);
-  color: white;
 }
 
 /* LINKS */
@@ -148,6 +167,11 @@ footer .social-links a:hover {
 
 /* MOBILE */
 @media (max-width: 600px) {
+  section {
+    height: auto;
+    padding: 60px 20px;
+  }
+
   h1 {
     font-size: 36px;
   }

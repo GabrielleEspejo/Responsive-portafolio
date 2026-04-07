@@ -1,0 +1,169 @@
+/* RESET */
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #f4f4f5;
+  color: #111;
+}
+
+/* NAVBAR */
+.navbar {
+  background: white !important;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.nav-link {
+  color: #555 !important;
+  margin-left: 20px;
+}
+
+.nav-link:hover {
+  color: #000 !important;
+}
+
+/* HERO */
+.hero {
+  padding: 120px 20px 80px;
+}
+
+.hero h1 {
+  font-size: 56px;
+  font-weight: 800;
+}
+
+.slogan {
+  margin: 15px 0;
+  color: #22c55e;
+  font-weight: 600;
+}
+
+.hero p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.hero-img {
+  max-width: 300px;
+  transition: 0.3s;
+}
+
+.hero-img:hover {
+  transform: rotate(-5deg) scale(1.05);
+}
+
+/* BUTTON */
+.btn-main {
+  background: black;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.btn-main:hover {
+  background: #22c55e;
+}
+
+/* SECTIONS */
+section {
+  padding: 80px 20px;
+}
+
+h2 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* CARDS */
+.card-light {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.card-dark {
+  background: #111;
+  color: white;
+  padding: 25px;
+  border-radius: 16px;
+  transition: 0.3s;
+}
+
+.card-light:hover,
+.card-dark:hover {
+  transform: translateY(-5px);
+}
+
+/* PROJECTS */
+.project-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.project-card img {
+  width: 100%;
+}
+
+.project-card h5 {
+  padding: 15px;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 36px;
+}
+
+.cta p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* PAGE (about, contact) */
+.page {
+  padding-top: 120px;
+  max-width: 800px;
+}
+
+.email-link {
+  color: #22c55e;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero-img {
+    margin-top: 30px;
+  }
+
+}

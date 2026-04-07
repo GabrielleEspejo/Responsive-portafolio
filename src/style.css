@@ -213,10 +213,8 @@ color: var(--variant-color2);
 /* Media Screen  Start*/
 
 @media (max-width: 600px) {
-  section {
-    flex-direction: column;
-  }
-  container, container-fluid {
+  
+  .container, .container-fluid {
     justify-content: center;
     text-align: center;
   }

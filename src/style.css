@@ -2,7 +2,6 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
 }
 
 body {
@@ -10,7 +9,6 @@ body {
   font-family: "Inter", "Quicksand", sans-serif;
   background: #f8fafc;
   color: #1e293b;
-  overflow-y: scroll;
 }
 
 /* IMAGES */
@@ -24,7 +22,6 @@ img {
 :root {
   --primary: #0f172a;
   --accent: #ef4444;
-  --soft: #f1f5f9;
   --muted: #64748b;
 }
 
@@ -43,33 +40,34 @@ img {
   color: var(--accent) !important;
 }
 
-/* SECTIONS (FULL SCREEN SCROLL GENERAL) */
+/* SECTIONS (NORMAL POR DEFECTO) */
 section {
-  min-height: 100vh;
   padding: 100px 20px;
+}
+
+/* SOLO HOME TIENE FULLSCREEN */
+.sec1,
+.sec2,
+.sec3 {
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  scroll-snap-align: start;
-  transition: all 0.6s ease;
 }
 
-/* HERO */
+/* FONDOS */
 .sec1 {
   background: linear-gradient(120deg, #f8fafc, #e2e8f0);
 }
 
-/* SECTION 2 */
 .sec2 {
   background: white;
 }
 
-/* SECTION 3 */
 .sec3 {
   background: #f1f5f9;
 }
 
-/* ABOUT */
 .sec4 {
   background: linear-gradient(135deg, #0f172a, #1e293b);
   color: white;
@@ -80,18 +78,12 @@ section {
   color: white;
 }
 
-/* CONTACT */
 .sec5 {
   background: white;
 }
 
-/* PROJECTS (FIX IMPORTANTE) */
 .sec6 {
   background: #f8fafc;
-  scroll-snap-align: none;
-  height: auto;
-  display: block;
-  padding-top: 120px;
 }
 
 /* TEXT */
@@ -213,9 +205,10 @@ footer .social-links a:hover {
 
 /* MOBILE */
 @media (max-width: 600px) {
-  section {
+  .sec1,
+  .sec2,
+  .sec3 {
     min-height: auto;
-    padding: 60px 20px;
   }
 
   h1 {

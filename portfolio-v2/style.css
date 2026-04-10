@@ -105,7 +105,26 @@ h2 {
 .card-dark:hover {
   transform: translateY(-5px);
 }
+/* PROJECT CARD (global - index) */
+.project-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
 
+.project-card img {
+  width: 100%;
+}
+
+.project-card h5 {
+  padding: 15px;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+}
 /* PROJECTS (solo projects.html) */
 .page .project-card {
   background: white;
